@@ -256,5 +256,4 @@ class LLM:
         # This is necessary because some requests may be finished earlier than
         # its previous requests.
         outputs = sorted(outputs, key=lambda x: int(x.request_id))
-        print(outputs)
         return outputs
